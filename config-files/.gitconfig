@@ -1,0 +1,13 @@
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[includeif "gitdir:/home/kalinka/code/"]
+	path = /home/kalinka/.gitconfig-kalinkasolution
+[includeif "gitdir:/home/kalinka/work/"]
+	path = /home/kalinka/.gitconfig-work
+
