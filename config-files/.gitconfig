@@ -11,3 +11,5 @@
 [includeif "gitdir:/home/kalinka/work/"]
 	path = /home/kalinka/.gitconfig-work
 
+[core]
+	autocrlf = input

@@ -14,6 +14,9 @@ PATH=$PATH:$ANDROID_HOME/platform-tools
 
 PATH=$PATH:/opt/node-v22.16.0-linux-x64/bin
 
-PATH=$PATH:/opt/dotnet-sdk-9.0.301
+export DOTNET_ROOT=/opt/dotnet-sdk-9.0.301
+PATH=$PATH:$DOTNET_ROOT
+PATH=$PATH:/opt/.dotnet/tools
+PATH=$PATH:/opt/dotnet-runtime-9.0.6
 
 export PATH
