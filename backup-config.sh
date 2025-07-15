@@ -7,3 +7,7 @@ rsync -av $HOME/.zprofile ./config-files
 rsync -av $HOME/.gitconfig ./config-files
 rsync -av $HOME/.gitconfig-kalinkasolution ./config-files
 rsync -av $HOME/.gitconfig-work ./config-files
+
+mkdir -p config-files/.ssh/configs
+rsync -av $HOME/.ssh/configs/ ./config-files/.ssh/configs/
+rsync -av $HOME/.ssh/config ./config-files/.ssh
