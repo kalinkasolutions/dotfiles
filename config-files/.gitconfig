@@ -13,3 +13,5 @@
 
 [core]
 	autocrlf = input
+[alias]
+    c = commit -m
