@@ -1,0 +1,15 @@
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM yes
+
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem   sftp    /usr/lib/openssh/sftp-server
+PubkeyAuthentication yes
+KerberosAuthentication no
+GSSAPIAuthentication yes
+
+AuthorizedKeysCommand /usr/bin/sss_ssh_authorizedkeys
+AuthorizedKeysCommandUser nobody
+

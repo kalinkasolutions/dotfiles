@@ -1,0 +1,13 @@
+// This polkit rule grants members of the FreeIPA "admins" group
+// permission to perform specific PackageKit actions (install, update,
+// remove packages) without being prompted for additional authentication.
+// It restores the auto-install behavior when commands are missing.
+
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.freedesktop.packagekit.package-install" ||
+         action.id == "org.freedesktop.packagekit.system-update" ||
+         action.id == "org.freedesktop.packagekit.package-remove") &&
+        subject.isInGroup("admins")) {
+        return polkit.Result.YES;
+    }
+});

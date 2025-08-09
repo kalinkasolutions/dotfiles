@@ -7,5 +7,5 @@ rsync -av ./config-files/.gitconfig-kalinkasolution $HOME/
 rsync -av ./config-files/.gitconfig-work $HOME/
 
 mkdir -p $HOME/.ssh/configs
-rsync -av ./config-files/.ssh/configs/ $HOME/.ssh/
+rsync -av ./config-files/.ssh/configs/ $HOME/.ssh/configs/
 rsync -av ./config-files/.ssh/config $HOME/.ssh
