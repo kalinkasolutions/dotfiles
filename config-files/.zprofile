@@ -19,4 +19,11 @@ PATH=$PATH:$DOTNET_ROOT
 PATH=$PATH:/opt/.dotnet/tools
 PATH=$PATH:/opt/dotnet-runtime-9.0.6
 
+
+PATH="$PATH:/home/kalinka/.local/share/JetBrains/Toolbox/scripts"
+
+
 export PATH
+
+
+

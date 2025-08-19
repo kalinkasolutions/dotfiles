@@ -1,4 +1,4 @@
 [user]
 	name = Nicolas Fahrni
 	email = fahrni.nicolas.ch@gmail.com
-        signingkey = /home/kalinka/.ssh/id-kalinka-signing
+        signingkey = ~/.ssh/signing-nfahrni
