@@ -15,4 +15,4 @@
 	autocrlf = input
 [alias]
     c = commit -m
-    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+    l = log --pretty=oneline  --graph --abbrev-commit --all
