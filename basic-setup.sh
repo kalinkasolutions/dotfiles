@@ -30,29 +30,3 @@ curl -fsSL https://raw.githubusercontent.com/kalinkasolutions/dotfiles/refs/head
 
 # Change default shell to zsh for the user
 chsh -s "$(which zsh)" "$(whoami)"
-
-sudo ipa-client-install \
-  --mkhomedir \
-  --domain=kalinka.lan \
-  --server=ipa.kalinka.lan \
-  --realm=KALINKA.LAN
-
-sudo apt update
-sudo apt install freeipa-client
-sudo apt install sssd-tools
-
-echo "PasswordAuthentication no
-X11Forwarding yes
-PrintMotd no
-AcceptEnv LANG LC_*
-Subsystem   sftp    /usr/lib/openssh/sftp-server
-
-PubkeyAuthentication yes
-KerberosAuthentication yes
-GSSAPIAuthentication yes
-UsePAM yes
-ChallengeResponseAuthentication no
-
-AuthorizedKeysCommand /usr/bin/sss_ssh_authorizedkeys
-AuthorizedKeysCommandUser root
-" | sudo tee /etc/ssh/sshd_config
