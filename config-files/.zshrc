@@ -23,6 +23,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 alias ll="ls -lah"
+alias cat="bat"
 
 # Prefer config file over resolving domain domain
 zstyle ':completion:*:ssh:*' hosts off
