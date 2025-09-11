@@ -12,4 +12,3 @@ rsync -av ./config-files/.ssh/config $HOME/.ssh
 
 mkdir -p /etc/{keyd,ssh}
 rsync -av etc/keyd/default.conf /etc/keyd/default.conf
-sudo rsync -av chown=root:root chmod=600 etc/ssh/sshd_config /etc/ssh/ssh_config

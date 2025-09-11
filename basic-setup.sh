@@ -4,11 +4,11 @@ set -x
 sudo timedatectl set-timezone Europe/Zurich
 
 if [ -f /etc/debian_version ]; then
-    sudo apt update && sudo apt install -y zsh freeipa-client sssd-tools chrony bat
+    sudo apt update && sudo apt install -y git zsh freeipa-client sssd-tools chrony bat
 elif [ -f /etc/redhat-release ]; then
-    sudo dnf install -y zsh freeipa-client sssd-tools || sudo yum install -y zsh freeipa-client sssd-tools chrony bat
+    sudo dnf install -y git zsh freeipa-client sssd-tools bat || sudo yum install -y git zsh freeipa-client sssd-tools chrony bat
 elif [ -f /etc/arch-release ]; then
-    sudo pacman -Sy --noconfirm zsh freeipa-client sssd chrony bat
+    sudo pacman -Sy --noconfirm git zsh freeipa-client sssd chrony bat
 else
     echo "Unsupported OS. Please install zsh manually."
     exit 1
