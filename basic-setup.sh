@@ -1,11 +1,6 @@
 #!/bin/bash
 set -x
 
-current=$(hostname)
-if [[ "$current" != *.kalinka.lan ]]; then
-    sudo hostnamectl set-hostname "${current}.kalinka.lan"
-fi
-
 sudo timedatectl set-timezone Europe/Zurich
 
 if [ -f /etc/debian_version ]; then
@@ -19,7 +14,6 @@ else
     exit 1
 fi
 
-sudo apt install chrony
 sudo systemctl enable --now chronyd
 
 # Install oh-my-zsh non-interactively
