@@ -10,5 +10,9 @@ mkdir -p $HOME/.ssh/configs
 rsync -av ./config-files/.ssh/configs/ $HOME/.ssh/configs/
 rsync -av ./config-files/.ssh/config $HOME/.ssh
 
+mkdir -p $HOME/.config/{rofi}
+rsync -av ./config-files/.config/rofi $HOME/.config/
+
+
 mkdir -p /etc/{keyd,ssh}
 rsync -av etc/keyd/default.conf /etc/keyd/default.conf

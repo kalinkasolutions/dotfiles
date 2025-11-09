@@ -11,6 +11,7 @@ PATH=$PATH:/opt/gradle-8.14.2/bin
 
 export ANDROID_HOME=/opt/Android/Sdk
 PATH=$PATH:$ANDROID_HOME/platform-tools
+PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 PATH=$PATH:/opt/node-v22.16.0-linux-x64/bin
 
@@ -21,6 +22,8 @@ PATH=$PATH:/opt/dotnet-runtime-9.0.6
 
 
 PATH="$PATH:/home/kalinka/.local/share/JetBrains/Toolbox/scripts"
+
+PATH=$PATH:/home/kalinka/.cargo/bin
 
 
 export PATH

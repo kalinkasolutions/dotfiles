@@ -30,3 +30,4 @@ zstyle ':completion:*:ssh:*' hosts off
 
 # show hostname on prompt
 PROMPT='%{$fg[cyan]%}%m %{$reset_color%}%(?:%{$fg_bold[green]%}➜%{$reset_color%} :%{$fg_bold[red]%}➜%{$reset_color%} ) %{$fg[cyan]%}%c%{$reset_color%} '
+
