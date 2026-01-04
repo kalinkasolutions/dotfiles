@@ -16,3 +16,5 @@
 [alias]
     c = commit -m
     l = log --pretty=oneline  --graph --abbrev-commit --all
+    quick = !git add . && git commit -m "sq" && git push
+    amend = !git add . && git commit --amend --no-edit && git push --force
