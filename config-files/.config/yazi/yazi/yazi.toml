@@ -1,0 +1,20 @@
+[opener]
+okular = [
+    { run = "okular %s" }
+]
+firefox = [
+    { run = "firefox %s" }
+]
+mount_iso = [
+    { desc="Mount", run = "loopdev=$(udisksctl loop-setup -f %s 2>&1 | awk '{print $NF}' | tr -d '.') && udisksctl mount -b $loopdev" }
+]
+extract = [
+	{ run = "ya pub extract --list %s", desc = "Extract here" },
+]
+
+[open]
+rules = [
+    { mime = "application/pdf", use = ["okular", "firefox"] },
+    { url = "*.iso", use = ["mount_iso"] },
+    { url = "*.zip", use = ["extract"] }
+]
