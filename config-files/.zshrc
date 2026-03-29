@@ -34,3 +34,4 @@ PROMPT='%{$fg[cyan]%}%m %{$reset_color%}%(?:%{$fg_bold[green]%}➜%{$reset_color
 if [[ -n "$SSH_CONNECTION" ]]; then
   PROMPT='%{$fg[magenta]%}%m %{$reset_color%}%(?:%{$fg_bold[magenta]%}➜%{$reset_color%} :%{$fg_bold[red]%}➜%{$reset_color%}) %{$fg[magenta]%}%c%{$reset_color%} '
 fi
+
